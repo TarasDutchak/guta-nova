@@ -1,0 +1,2158 @@
+.herosect {
+    height: 100vh;
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.5);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 58px;
+        font-family: "Tenor Sans", sans-serif;
+        line-height: 110%;
+        font-weight: 400;
+        margin: -200px 0 0 0;
+    }
+}
+
+.herosect__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.herosect__formwrap {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+}
+
+.herosect__form {
+    background: rgba(#fff, 0.26);
+    border-radius: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px 30px;
+    backdrop-filter: blur(5px);
+    border: 1px solid #C9A96D;
+
+
+    .herosect__formleft {
+        width: 100%;
+        max-width: 29%;
+        flex: 0 0 29%;
+
+        p {
+            margin: 0;
+            font-size: 19px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+    }
+
+    .herosect__formright {
+        width: 100%;
+        max-width: 71%;
+        flex: 0 0 71%;
+        padding-left: 50px;
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .inputfield {
+                width: 100%;
+                max-width: 237px;
+                flex: 0 0 237px;
+
+                input {
+                    height: 48px;
+                    background: transparent;
+                    border: none;
+                    width: 100%;
+                    border-bottom: 1px solid #fff;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 16px;
+                    color: #fff;
+                    transition: 0.3s;
+
+                    &::placeholder {
+                        color: rgba(#fff, 0.8);
+                    }
+
+                    &:focus {
+                        border-bottom: 1px solid #bb9247;
+                    }
+                }
+            }
+
+            .herosect__submit {
+                height: 48px;
+                width: 100%;
+                max-width: 165px;
+                flex: 0 0 165px;
+                background: #C9A86C;
+                border-radius: 24px;
+                border: none;
+                padding: 3px 10px;
+                color: #fff;
+                font-weight: 500;
+                font-family: "Montserrat", sans-serif;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background: #bb9247;
+                }
+            }
+        }
+    }
+}
+
+// Ексклюзивний комплекс
+.exclusivecomplex {
+    padding: 160px 0 630px;
+    background-image: url('../img/main/pattern.png');
+    background-repeat: repeat-x;
+    position: relative;
+    background-color: #FAF9F4;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .descr {
+        max-width: 525px;
+
+        p {
+            margin: 0;
+            font-size: 17px;
+            line-height: 150%;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 35px;
+            color: #C9A86C;
+            font-size: 17px;
+            font-weight: 600;
+            transition: 0.3s;
+
+            svg {
+                margin-left: 15px;
+
+                path {
+                    transition: 0.3s;
+                }
+            }
+
+            &:hover {
+                color: #bb9247;
+
+                svg {
+                    path {
+                        animation: move 2s infinite;
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.exclusivecomplex__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 694px;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+        vertical-align: top;
+    }
+}
+
+.infonum {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .infonum__box {
+        width: 100%;
+        max-width: 33.333%;
+        flex: 0 0 33.333%;
+        text-align: center;
+
+        span {
+            font-size: 80px;
+            color: #C9A86C;
+            line-height: 110%;
+            font-family: "Tenor Sans", sans-serif;
+
+            i {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            margin: 5px 0 0 0;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #2A332D;
+            line-height: 110%;
+        }
+    }
+}
+
+.exclusivecomplex__bottomic {
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    width: 100%;
+
+    .box {
+        width: 160px;
+
+        img {
+            width: 100px;
+        }
+
+        p {
+            margin: 15px 0 0 0;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+// Інвестиційний потенціал
+.investsect {
+    padding: 160px 0 0 0;
+    background: #2A332D;
+
+    .investsect__topsect {
+        padding-bottom: 45px;
+    }
+
+    .descr {
+        p {
+            margin-bottom: 20px;
+            font-size: 17px;
+            color: #fff;
+
+            b {
+                font-weight: 600;
+            }
+        }
+
+        a {
+            margin-top: 30px;
+
+            &:hover {
+                animation: pulse 2s infinite;
+            }
+        }
+    }
+
+    .investsect__img {
+        height: 640px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(#000, 0.38);
+            z-index: 1;
+        }
+    }
+
+}
+
+.investsect__circles {
+    position: absolute;
+    max-width: 518px;
+    width: 100%;
+    left: calc((100vw - 1444px) / 2);
+    top: 0;
+
+    .circleboxwrap {
+        margin-top: -120px;
+    }
+}
+
+.circleboxwrap {
+    background: #2A332D;
+    border-radius: 50%;
+    width: 233px;
+    height: 233px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+
+    &:nth-child(1) {
+        left: 0;
+    }
+
+    &:nth-child(2) {
+        right: 0;
+    }
+
+    .circlebox {
+        width: calc(100% - 34px);
+        height: calc(100% - 34px);
+        border: 1px solid #C9A86C;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 45px;
+
+        p {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .title {
+            color: #fff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            line-height: 110%;
+            font-size: 16px;
+        }
+
+        .inf {
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 110%;
+            color: #C9A86C;
+
+            span {
+                font-size: 57px;
+            }
+
+            i {
+                font-size: 24px;
+                font-style: normal;
+            }
+        }
+    }
+
+}
+
+.investsect__img-info {
+    position: absolute;
+    bottom: 104px;
+    width: 100%;
+    z-index: 2;
+    text-align: right;
+
+    .infwrap {
+        max-width: 480px;
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+
+        p {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 23px;
+            font-family: "Tenor Sans", sans-serif;
+        }
+
+        a {
+            font-size: 17px;
+            color: #FFD995;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: 0.3s;
+
+            svg {
+                margin-left: 15px;
+            }
+
+            &:hover {
+                color: #bb9247;
+
+                svg {
+                    path {
+                        animation: move 2s infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Котеджі
+.cotadges {
+    padding: 160px 0;
+    position: relative;
+    background-image: url(../img/main/pattern.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-color: #FAF9F4;
+
+    .absel1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .absel2 {
+        position: absolute;
+        left: 0;
+        top: 228px;
+    }
+}
+
+.cotadges__top {
+    text-align: center;
+    margin-bottom: 70px;
+
+    h2 {
+        margin-bottom: 50px;
+        font-size: 55px;
+    }
+
+    p {
+        margin: 0 auto;
+        max-width: 705px;
+        font-size: 17px;
+        color: #231F20;
+    }
+}
+
+.cotadges__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+
+    .cotadgebox {
+        width: 100%;
+        max-width: 30%;
+        flex: 0 0 30%;
+        position: relative;
+
+        &:hover {
+            .hovercot {
+                opacity: 1;
+            }
+
+            .cotadgebox__img img {
+                transform: scale(1.01);
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 60px;
+        }
+    }
+
+    .cotadgebox__img {
+        height: 572px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+
+    .cotadgebox__descr {
+        padding-top: 20px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .title {
+            width: 100%;
+            max-width: calc(100% - 120px);
+            flex: 0 0 calc(100% - 120px);
+            font-size: 20px;
+            position: relative;
+            color: #231F20;
+            padding-left: 33px;
+            margin: 0;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url('../img/main/star.svg') no-repeat center / 100%;
+                position: absolute;
+                left: 0;
+                top: 3px;
+            }
+        }
+
+        .sq {
+            width: 100%;
+            max-width: 120px;
+            flex: 0 0 120px;
+            text-align: right;
+            margin: 0;
+            font-size: 20px;
+            color: #231F20;
+        }
+    }
+
+    .hovercot {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.42);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: 0.7s;
+        cursor: pointer;
+
+        .hovercotbox {
+            text-align: center;
+
+            img {
+                width: 67px;
+                margin-bottom: 17px;
+            }
+
+            p {
+                margin: 0;
+                color: #C9A86C;
+                font-size: 17px;
+            }
+        }
+    }
+
+}
+
+.hidden-gallery-images {
+    display: none;
+}
+
+.cotadges__btns {
+    text-align: center;
+    margin-top: 80px;
+
+    a {
+        margin: 0 15px;
+        font-size: 17px;
+    }
+}
+
+// інфраструктура
+
+.infrastucture {
+    padding: 160px 0 0 0;
+
+    .descr {
+        p {
+            font-size: 17px;
+            color: #231F20;
+        }
+    }
+
+    .arrlink {
+        margin-top: 10px;
+    }
+}
+
+.infrastucture__top {
+    margin-bottom: 60px;
+}
+
+.infrtabsheader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    button {
+        padding: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: rgba(#231F20, 0.55);
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 21px;
+        line-height: 110%;
+        text-transform: uppercase;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            display: block;
+            background: url('../img/main/star.svg') no-repeat center / 20px;
+            margin: 0 auto;
+            opacity: 0;
+            transition: 0.3s;
+            margin-bottom: 10px;
+        }
+
+        &.active {
+            color: rgba(#231F20, 1);
+
+            &::before {
+                opacity: 1;
+            }
+
+        }
+
+        &:hover {
+            color: #bb9247;
+        }
+    }
+}
+
+.infrtabsheader {
+    margin-bottom: 50px;
+}
+
+.infrtabsbody {
+    overflow: hidden;
+
+    .swiper {
+        .imgwrap {
+            height: 590px;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+}
+
+.slidernavbox-wrap {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 50px;
+    z-index: 2;
+
+
+    .slidernavbox {
+        width: 175px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        margin: 0;
+        opacity: 1;
+        z-index: 11;
+        top: initial;
+        width: auto;
+        height: auto;
+
+        &::after {
+            display: none;
+        }
+
+        svg {
+            circle {
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            svg {
+                circle {
+                    fill: rgba(#2A332D, 0.8);
+                }
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+        right: initial;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        left: initial;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        width: auto;
+        top: initial;
+        bottom: initial;
+    }
+
+    .swiper-pagination-current {
+        color: #FFD995;
+        font-size: 25px;
+        font-family: "Tenor Sans", sans-serif;
+    }
+}
+
+// Переваги
+.benefits {
+    padding: 160px 0 10px;
+    background-image: url(../img/main/pattern.png), url(../img/main/bg1.jpg);
+    background-repeat: repeat-x, no-repeat;
+    background-size: auto, cover;
+
+    h2 {
+        margin-bottom: 135px;
+    }
+}
+
+.benefit {
+    padding-top: 32px;
+    border-top: 1px solid #C9A86C;
+    margin-bottom: 150px;
+
+    .count {
+        font-weight: 500;
+        font-size: 13px;
+        color: rgba(#151515, 0.4);
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 30px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: -1px;
+            background: url('../img/main/star.svg') no-repeat center / 100%;
+        }
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 110%;
+        font-family: "Tenor Sans", sans-serif;
+        color: #2A332D;
+        margin-bottom: 25px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 62px;
+    }
+
+    .descr {
+        margin-bottom: 25px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 77px;
+
+        p {
+            color: #231F20;
+            font-size: 17px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .imgwrap {
+        height: 160px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+}
+
+.benefits {
+    .row {
+        margin-left: -37px;
+        margin-right: -37px;
+
+        .col-xl-4 {
+            padding-left: 37px;
+            padding-right: 37px;
+            margin-top: -60px;
+
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(8) {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+// Хід будівництва
+.buildingproc {
+    padding: 130px 0 100px;
+    background: #2A332D;
+    position: relative;
+
+    .slarrbox {
+        position: relative;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        top: 0;
+    }
+
+    .swiper-button-prev {
+        right: 80px;
+        top: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        margin: 0;
+        opacity: 1;
+        z-index: 11;
+        top: -150px;
+        width: 61px;
+        height: 42px;
+        left: initial;
+
+        &::after {
+            display: none;
+        }
+
+        svg circle {
+            transition: 0.5s;
+        }
+
+        &:hover {
+            svg circle {
+                fill: #2A332D;
+            }
+        }
+    }
+
+    .swiper {
+        padding-left: calc((100vw - 1444px) / 2);
+
+        .swiper-slide {
+            &:nth-child(even) {
+                padding-top: 60px;
+            }
+        }
+    }
+
+}
+
+.building__slide {
+    .imgwrap {
+        height: 237px;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(#000, 0.3);
+            width: 100%;
+            height: 100%;
+        }
+
+        .imgsl {
+            position: absolute;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            object-position: 50% 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .playbtn {
+            position: absolute;
+            width: 55px;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .descrvideo {
+        padding-top: 15px;
+
+        .date {
+            font-size: 15px;
+            color: #fff;
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 15px;
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: -1px;
+                background: url(../img/main/star.svg) no-repeat center / 100%;
+            }
+        }
+
+        .title {
+            font-size: 17px;
+            line-height: 130%;
+            font-weight: 500;
+            color: #fff;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}
+
+.documentation {
+    background: #2A332D;
+    position: relative;
+    padding: 90px 0;
+    border-top: 1px solid rgba(#B59964, 0.2);
+
+    .title {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 55px;
+        font-family: "Tenor Sans", sans-serif;
+        margin: 0;
+    }
+
+    .el1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .el2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url('../img/main/star.svg') no-repeat center / 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        top: -15px;
+    }
+}
+
+.documentation__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        background: #C9A86C;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 65px;
+        width: 100%;
+        max-width: calc(50% - 15px);
+        flex: 0 0 calc(50% - 15px);
+        border-radius: 50px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.5s;
+
+        img {
+            width: 25px;
+            margin-right: 15px;
+        }
+
+        &:hover {
+            background: #bb9247;
+        }
+    }
+}
+
+// faq
+.faq {
+    padding: 185px 0 190px;
+    background-image: url(../img/main/pattern.png), url(../img/main/pattern.png);
+    background-repeat: repeat-x;
+    background-position: left top, left bottom;
+
+    h2 {
+        margin-bottom: 45px;
+    }
+}
+
+.faqrow {
+    border-bottom: 1px solid rgba(#C9A86C, 0.6);
+}
+
+.faqheader {
+    min-height: 100px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 70px;
+    position: relative;
+
+    &.active {
+        &::after {
+            transform: rotate(-180deg);
+        }
+
+        p {
+            color: #C9A86C;
+        }
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        background: url('../img/main/faq-arrow.svg') no-repeat center / 100%;
+        position: absolute;
+        right: 0;
+        top: 37px;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+    }
+
+    p {
+        font-family: "Tenor Sans", sans-serif;
+        margin: 0;
+        color: #231F20;
+        font-size: 21px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+}
+
+.faqbody {
+    display: none;
+    padding: 10px 0 30px 40px;
+
+    p {
+        margin: 0;
+        font-size: 17px;
+        color: #231F20;
+    }
+}
+
+// welcome
+.welcomesect {
+    padding: 90px 0 68px;
+    background: #2A332D;
+    position: relative;
+
+    form {
+        max-width: 410px;
+    }
+
+    .title {
+        font-size: 50px;
+        color: #fff;
+        font-family: "Tenor Sans", sans-serif;
+        line-height: 110%;
+        margin-bottom: 25px;
+        padding-left: 50px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 17px;
+        margin: 0;
+        max-width: 594px;
+        padding-left: 50px;
+    }
+
+    .inputfield {
+        margin-bottom: 45px;
+
+        input {
+            width: 100%;
+            height: 56px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-size: 18px;
+            font-family: "Montserrat", sans-serif;
+
+            &::placeholder {
+                color: rgba(#fff, 0.7);
+            }
+        }
+    }
+
+    button.yellowbtn {
+        max-width: 100%;
+        width: 100%;
+        font-size: 18px;
+        background: #C9A86C;
+        cursor: pointer;
+
+        &:hover {
+            background: #bb9247;
+            animation: pulse 2s infinite;
+        }
+    }
+
+    .el1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .el2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .el3 {
+        position: absolute;
+        left: -30px;
+        top: 0;
+    }
+
+    .container {
+        position: relative;
+    }
+}
+
+.investsect .investsect__topsect {
+    min-height: 240px;
+}
+
+.welcomesect form {
+    position: relative;
+    z-index: 2;
+}
+
+
+@media(max-width:1599.8px) {
+
+    .herosect h1 {
+        font-size: 50px;
+        margin-top: -180px;
+    }
+
+    .herosect__formwrap {
+        bottom: 50px;
+    }
+
+    .investsect {
+        padding: 120px 0 0 0;
+    }
+
+    .investsect .investsect__img {
+        height: 550px;
+    }
+
+    .investsect__img-info {
+        bottom: 70px;
+    }
+
+    .cotadges {
+        padding: 120px 0 140px;
+    }
+
+    .cotadges__body .cotadgebox__descr {
+        padding-top: 15px;
+    }
+
+    .infrastucture {
+        padding: 120px 0 0 0;
+    }
+
+    .infrtabsheader {
+        margin-bottom: 30px;
+    }
+
+    .benefits {
+        padding: 140px 0 10px;
+    }
+
+    .benefits h2 {
+        margin-bottom: 120px;
+    }
+
+    .benefit h3 {
+        font-size: 24px;
+        min-height: 54px;
+    }
+
+    .benefit .count {
+        margin-bottom: 20px;
+    }
+
+    .benefit {
+        padding-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .buildingproc {
+        padding: 120px 0 80px;
+    }
+
+    .documentation {
+        padding: 70px 0;
+    }
+
+    .faq {
+        padding: 140px 0;
+    }
+
+    .faqheader {
+        min-height: 90px;
+
+        p {
+            font-size: 19px;
+        }
+    }
+
+    .faqbody {
+        padding-top: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    .cotadges__top h2 {
+        margin-bottom: 40px;
+    }
+
+    .exclusivecomplex {
+        padding: 140px 0 600px;
+    }
+
+    .infonum .infonum__box span {
+        font-size: 70px;
+    }
+
+    .documentation .title,
+    .welcomesect .title {
+        font-size: 46px;
+    }
+
+    .investsect__img-info .infwrap p,
+    .infrtabsheader button {
+        font-size: 20px;
+    }
+
+    .herosect__form .herosect__formleft p,
+    .cotadges__body .cotadgebox__descr .title,
+    .cotadges__body .cotadgebox__descr .sq {
+        font-size: 18px;
+    }
+
+    .exclusivecomplex .descr p,
+    .investsect .descr p,
+    .cotadges__top p,
+    .infrastucture .descr p,
+    .benefit .descr p,
+    .building__slide .descrvideo .title,
+    .welcomesect p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1500.8px) {
+    .infonum .infonum__box p {
+        font-size: 14px;
+    }
+
+    .investsect__circles {
+        left: calc((100vw - 1320px) / 2);
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .herosect h1 {
+        font-size: 44px;
+    }
+
+    .exclusivecomplex {
+        padding: 100px 0 450px;
+    }
+
+    .infonum .infonum__box span {
+        font-size: 55px;
+    }
+
+    .exclusivecomplex__bottomic {
+        bottom: 50px;
+
+        .box p {
+            font-size: 14px;
+        }
+    }
+
+    .exclusivecomplex__bg {
+        height: 500px;
+    }
+
+    .investsect {
+        padding: 100px 0 0 0;
+    }
+
+    .investsect__circles {
+        left: calc((100vw - 1140px) / 2);
+    }
+
+    .investsect .investsect__img {
+        height: 450px;
+    }
+
+    .cotadges {
+        padding: 100px 0;
+    }
+
+    .cotadges .absel1,
+    .cotadges .absel2 {
+        width: 160px;
+    }
+
+    .cotadges__body .cotadgebox__img {
+        height: 430px;
+    }
+
+    .cotadges__body .cotadgebox__descr {
+        padding: 10px 5px 0 5px;
+    }
+
+    .cotadges__body .cotadgebox__descr .title:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cotadges__body .cotadgebox__descr .title {
+        padding-left: 25px;
+    }
+
+    .cotadges__btns {
+        margin-top: 60px;
+    }
+
+    .infrastucture {
+        padding: 100px 0 0 0;
+    }
+
+    .infrtabsbody .swiper .imgwrap {
+        height: 460px;
+    }
+
+    .benefits {
+        background-size: auto 50px, cover;
+    }
+
+    .benefits {
+        padding: 100px 0 10px;
+    }
+
+    .benefits .row .col-xl-4 {
+        margin-top: -40px;
+    }
+
+    .benefit h3 {
+        margin-bottom: 15px;
+        font-size: 21px;
+        min-height: 47px;
+    }
+
+    .benefits h2 {
+        margin-bottom: 90px;
+    }
+
+    .buildingproc {
+        padding: 100px 0 80px;
+    }
+
+    .buildingproc .swiper-button-next,
+    .buildingproc .swiper-button-prev {
+        top: -120px;
+    }
+
+    .building__slide .imgwrap {
+        height: 200px;
+    }
+
+    .documentation__btns a {
+        font-size: 15px;
+        height: 56px;
+
+        img {
+            margin-right: 4px;
+        }
+    }
+
+    .faq {
+        padding: 100px 0;
+    }
+
+    .welcomesect .el1 {
+        width: 120px;
+    }
+
+    .welcomesect .el2 {
+        width: 100px;
+    }
+
+    .welcomesect .el3 {
+        width: 100px;
+        left: 0;
+        top: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cotadges__top h2,
+    .documentation .title {
+        font-size: 36px;
+    }
+
+
+    .exclusivecomplex h2 {
+        margin-bottom: 30px;
+    }
+
+    .exclusivecomplex,
+    .cotadges,
+    .faq {
+        background-size: auto 50px;
+    }
+
+    .infrtabsheader button {
+        font-size: 17px;
+    }
+
+    .cotadges__body .cotadgebox__descr .sq,
+    .cotadges__body .cotadgebox__descr .title,
+    .herosect__form .herosect__formleft p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .benefits .row {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        .col-xl-4 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .herosect__form .herosect__formright form .inputfield {
+        max-width: 180px;
+    }
+
+    .infonum {
+        margin-top: 30px;
+    }
+
+    .circleboxwrap {
+        width: 200px;
+        height: 200px;
+    }
+
+    .investsect__circles {
+        left: calc((100vw - 960px) / 2);
+        max-width: 450px;
+    }
+
+    .circleboxwrap .circlebox .inf span {
+        font-size: 42px;
+    }
+
+    .circleboxwrap .circlebox .title {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .investsect__img-info .infwrap p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .investsect__img-info .infwrap {
+        max-width: 440px;
+    }
+
+    .investsect__img-info {
+        bottom: 40px;
+    }
+
+    .cotadges__body .cotadgebox__img {
+        height: 380px;
+    }
+
+    .infrtabsheader button {
+        font-size: 16px;
+    }
+
+    .benefit h3 {
+        font-size: 18px;
+        min-height: 38px;
+    }
+
+    .benefit {
+        margin-bottom: 60px;
+    }
+
+    .building__slide .imgwrap {
+        height: 170px;
+    }
+
+    .buildingproc .swiper {
+        padding-left: calc((100vw - 960px) / 2);
+    }
+
+    .documentation .title {
+        margin-bottom: 30px;
+    }
+
+    .welcomesect .title {
+        font-size: 36px;
+    }
+
+    .welcomesect .inputfield input {
+        font-size: 16px;
+    }
+
+    .welcomesect .inputfield {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .herosect__form {
+        border-radius: 20px;
+
+
+        .herosect__formleft {
+            max-width: 100%;
+            flex: 0 0 100%;
+
+            p {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .herosect__form .herosect__formright {
+        padding-left: 0;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .herosect__form .herosect__formright form .inputfield,
+    .herosect__form .herosect__formright form .herosect__submit {
+        max-width: 31%;
+        flex: 0 0 31%;
+    }
+
+    .herosect__form .herosect__formleft p {
+        font-size: 18px;
+    }
+
+    .investsect__circles {
+        right: calc((100vw - 720px) / 2);
+        left: initial;
+        max-width: 410px;
+
+        .circleboxwrap {
+            margin-top: -100px;
+        }
+    }
+
+    .investsect .investsect__topsect {
+        padding-bottom: 100px;
+    }
+
+    .cotadges__body .cotadgebox {
+        max-width: 32%;
+        flex: 0 0 32%;
+    }
+
+    .cotadges__body .cotadgebox__img {
+        height: 300px;
+    }
+
+    .infrtabsheader {
+        justify-content: center;
+
+        button {
+            margin: 0 15px;
+        }
+    }
+
+    .infrtabsheader button:before {
+        margin-bottom: 3px;
+        margin-top: 5px;
+    }
+
+    .benefits .row .col-xl-4 {
+        margin-top: 0;
+    }
+
+    .benefits h2 {
+        margin-bottom: 40px;
+    }
+
+    .buildingproc .swiper {
+        padding-left: calc((100vw - 720px) / 2);
+    }
+
+    .faqbody {
+        padding-left: 0;
+    }
+
+    .welcomesect form {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .welcomesect .title,
+    .welcomesect p {
+        padding-left: 0;
+    }
+
+    .welcomesect .title br {
+        display: none;
+    }
+}
+
+@media(max-width:767.8px) {
+    .investsect__circles {
+        right: 0;
+    }
+
+    .herosect h1 {
+        font-size: 38px;
+    }
+
+    .herosect__form {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .herosect__form .herosect__formright form .inputfield input {
+        font-size: 14px;
+    }
+
+    .cotadges__top h2,
+    .documentation .title {
+        font-size: 26px;
+    }
+
+    .investsect__circles .circleboxwrap {
+        margin-top: -70px;
+    }
+
+    .cotadges__top {
+        margin-bottom: 40px;
+    }
+
+    .cotadges__body .cotadgebox:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .cotadges__body .cotadgebox__descr .title,
+    .cotadges__body .cotadgebox__descr .sq {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: left;
+    }
+
+    .exclusivecomplex {
+        padding: 80px 0 400px;
+    }
+
+    .investsect,
+    .infrastucture {
+        padding: 80px 0 0 0;
+    }
+
+    .cotadges {
+        padding: 80px 0;
+    }
+
+    .cotadges__btns .yellowbtn {
+        max-width: 250px;
+        margin: 0 7px;
+    }
+
+    .infrtabsheader button {
+        margin: 0 15px;
+        font-size: 15px;
+    }
+
+    .infrtabsbody .swiper .imgwrap {
+        height: 360px;
+    }
+
+    .benefits {
+        padding: 80px 0 10px;
+    }
+
+    .buildingproc .swiper {
+        padding-left: calc((100vw - 540px) / 2);
+    }
+
+    .buildingproc {
+        padding: 80px 0 60px;
+    }
+
+    .buildingproc .swiper-button-next,
+    .buildingproc .swiper-button-prev {
+        top: -80px;
+    }
+
+    .documentation {
+        padding: 50px 0;
+    }
+
+    .faq {
+        padding: 80px 0;
+    }
+
+    .welcomesect {
+        padding: 80px 0 60px;
+    }
+
+
+
+
+    .faqheader p {
+        font-size: 18px;
+    }
+
+    .cotadges__top h2 {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .infonum .infonum__box {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .herosect__form .herosect__formright form .herosect__submit {
+        margin-top: 10px;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .herosect__form .herosect__formright form .inputfield {
+        max-width: calc(50% - 5px);
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .herosect__formwrap {
+        position: relative;
+        bottom: 0;
+    }
+
+    .herosect h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    .herosect {
+        flex-direction: column;
+    }
+
+    .exclusivecomplex {
+        padding: 60px 0 320px;
+    }
+
+    .exclusivecomplex .descr a {
+        margin-top: 20px;
+    }
+
+    .infonum .infonum__box span {
+        font-size: 40px;
+    }
+
+    .infonum .infonum__box {
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 15px;
+    }
+
+    .exclusivecomplex__bottomic .box p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .exclusivecomplex__bottomic .box img {
+        width: 80px;
+    }
+
+    .exclusivecomplex__bottomic {
+        bottom: 30px;
+    }
+
+    .exclusivecomplex__bg {
+        height: 400px;
+    }
+
+    .investsect .descr a {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .investsect .investsect__topsect {
+        padding-bottom: 140px;
+    }
+
+    .investsect__circles .circleboxwrap {
+        margin-top: -110px;
+    }
+
+    .circleboxwrap {
+        width: 170px;
+        height: 170px;
+    }
+
+    .circleboxwrap .circlebox .title {
+        font-size: 12px;
+    }
+
+    .circleboxwrap .circlebox .inf {
+        font-size: 13px;
+
+        span {
+            font-size: 25px;
+        }
+    }
+
+    .cotadges .absel1,
+    .cotadges .absel2 {
+        width: 120px;
+    }
+
+    .cotadges__body .cotadgebox {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .cotadges__top {
+        margin-bottom: 20px;
+    }
+
+    .cotadges__body .cotadgebox__descr .sq {
+        padding-left: 25px;
+    }
+
+    .cotadges__body .cotadgebox:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .cotadges__body .cotadgebox {
+        margin-bottom: 20px;
+    }
+
+    .cotadges {
+        padding: 60px 0;
+    }
+
+    .cotadges__body .cotadgebox__img {
+        height: 260px;
+    }
+
+    .cotadges__btns {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .cotadges__btns .yellowbtn,
+    .cotadges__btns .yellowbtn.borderbtn {
+        margin: 0;
+        max-width: 100%;
+        height: 48px;
+    }
+
+    .cotadges__btns {
+        margin-top: 0;
+    }
+
+    .cotadges__btns .yellowbtn {
+        margin-bottom: 10px;
+    }
+
+    .cotadges__top h2,
+    .documentation .title {
+        font-size: 22px;
+    }
+
+    .infrtabsheader button {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+    .infrastucture__top {
+        margin-bottom: 40px;
+    }
+
+    .infrtabsbody .swiper .imgwrap {
+        height: 320px;
+    }
+
+    .slidernavbox-wrap {
+        bottom: 20px;
+    }
+
+    .benefits h2 {
+        margin-bottom: 30px;
+    }
+
+    .benefits {
+        background-size: auto 40px, cover;
+    }
+
+    .benefit h3 {
+        min-height: initial;
+    }
+
+    .benefit .descr {
+        min-height: initial;
+    }
+
+    .buildingproc h2 {
+        margin-bottom: 100px;
+    }
+
+    .buildingproc .swiper-button-next {
+        right: initial;
+        left: 80px;
+    }
+
+    .buildingproc .swiper-button-prev {
+        right: initial;
+        left: 0;
+    }
+
+    .buildingproc .swiper .swiper-slide:nth-child(2n) {
+        padding-top: 0;
+    }
+
+    .buildingproc .swiper {
+        padding-left: 12px;
+    }
+
+    .documentation__btns {
+        flex-wrap: wrap;
+
+        a {
+            height: 50px;
+            max-width: 100%;
+            flex: 0 0 100%;
+
+            &:nth-child(1) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .documentation .title {
+        margin-bottom: 10px;
+    }
+
+    .faq {
+        padding: 60px 0;
+    }
+
+    .faq h2 {
+        margin-bottom: 30px;
+    }
+
+    .faqheader {
+        padding-right: 40px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .welcomesect {
+        padding: 60px 0;
+    }
+
+    .welcomesect .title {
+        font-size: 28px;
+    }
+
+    .welcomesect .el3 {
+        display: none;
+    }
+
+    .herosect {
+        justify-content: space-between;
+        padding-bottom: 30px;
+        padding-top: 150px;
+    }
+
+
+
+
+
+    .buildingproc {
+        padding: 60px 0 40px;
+    }
+
+    .infrastucture,
+    .investsect {
+        padding: 60px 0 0 0;
+    }
+
+    .exclusivecomplex h2,
+    .investsect h2 {
+        margin-bottom: 20px;
+    }
+
+    .cotadges,
+    .exclusivecomplex,
+    .faq {
+        background-size: auto 40px;
+    }
+
+    .exclusivecomplex .descr a {
+        font-size: 16px;
+    }
+}

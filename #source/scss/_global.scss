@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+body * {
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+@media(min-width:1500.8px) {
+    .container {
+        max-width: 1444px;
+    }
+}
+
+input {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+h2,
+h3,
+.secttitle {
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #2A332D;
+    text-transform: uppercase;
+
+    span {
+        display: block;
+        padding-left: 36px;
+    }
+
+    &.white {
+        color: #fff;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(201, 168, 108, .3);
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(201, 168, 108, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(201, 168, 108, .3);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.yellowbtn {
+    height: 65px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 290px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    background: #C9A86C;
+    border: 1px solid #C9A86C;
+    transition: 0.5s;
+
+    &:hover {
+        background: #bb9247;
+    }
+
+    &.borderbtn {
+        border: 1px solid #d4b989;
+        background: transparent;
+        color: #C9A86C;
+
+        &:hover {
+            color: #fff;
+            background: #C9A86C;
+
+        }
+    }
+}
+
+.arrlink {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(201, 168, 108);
+    font-size: 17px;
+    font-weight: 600;
+
+    svg {
+        margin-left: 15px;
+    }
+
+    &:hover {
+        color: #bb9247;
+
+        svg path {
+            animation: move 2s infinite;
+        }
+    }
+
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+@media(max-width:1599.8px) {
+
+    h2,
+    h3,
+    .secttitle {
+        font-size: 46px;
+    }
+}
+
+
+@media(max-width:1399.8px) {
+    h2,
+    h3,
+    .secttitle {
+        font-size: 36px;
+    }
+}
+
+@media(max-width:1399px) {
+    .yellowbtn {
+        height: 54px;
+    }
+}
+
+@media(max-width:767.8px) {
+    h2,
+    h3,
+    .secttitle {
+        font-size: 26px;
+
+        span {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+    .secttitle span, h2 span, h3 span {
+        padding-left: 10px;
+    }
+
+    h2,
+    h3,
+    .secttitle {
+        font-size: 22px;
+    }
+
+    .arrlink {
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+// .whitebtn:hover,
+// .transparentbtn:hover {
+//     animation: pulse 2s infinite;
+//     -webkit-animation: pulse 2s infinite;
+// }
+
+
+
+
+
+
+// font-family: "Tenor Sans", sans-serif;

@@ -1,0 +1,242 @@
+footer.footer {
+    padding: 78px 0 0 0;
+    background: #2A332D;
+    border-top: 1px solid rgba(#B59964, 0.2);
+    position: relative;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url(../img/main/star.svg) no-repeat center / 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        top: -15px;
+    }
+}
+
+.footer__top {
+    padding-bottom: 90px;
+}
+
+.footer__logo {
+    margin-top: 50px;
+    img {
+        max-width: 180px;
+    }
+}
+
+.footer__title {
+    margin-bottom: 25px;
+    color: rgba(#fff, 0.5);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.footer__box {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 16px;
+                color: #fff;
+                font-weight: 500;
+                line-height: 120%;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #B59964;
+                }
+            }
+
+        }
+    }
+
+    .footer__contacts {
+        li {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 22px;
+            }
+
+            .emaillink {
+                font-size: 17px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .footer__socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #E0E0E0;
+            transition: 0.5s;
+
+            img {
+                max-width: 30px;
+            }
+
+            &:hover {
+                border: 1px solid #B59964;
+            }
+        }
+    }
+
+    .descr {
+        font-size: 18px;
+        color: #fff;
+        line-height: 130%;
+        margin-bottom: 25px;
+    }
+
+    .arrlink {
+        font-weight: 500;
+
+        img {
+            width: 52px;
+        }
+    }
+}
+
+.footer__bottom {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+    background: #202923;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 130%;
+        color: #fff;
+        opacity: 0.42;
+    }
+}
+
+@media(max-width:1599.8px) {
+    .footer__box .footer__contacts li a {
+        font-size: 18px;
+    }
+
+    .footer__box .footer__contacts li .emaillink {
+        font-size: 16px;
+    }
+
+    .footer__box .descr {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .footer__top {
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:1399.8px)  {
+    .footer__box .footer__socials a {
+        width: 40px;
+        height: 40px;
+
+        img {
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .footer__logo img {
+        max-width: 150px;
+    }
+
+    .footer__logo {
+        margin-top: 20px;
+    }
+
+    .footer__box .arrlink {
+        font-size: 14px;
+
+        svg {
+            width: 40px;
+        }
+    }
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .footer__logo {
+        margin: 0 0 25px 0;
+    }
+
+    .footer .col-lg-3:last-child {
+        margin-top: 40px;
+    }
+
+    .footer__box .footer__socials {
+        max-width: 300px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    footer.footer {
+        padding-top: 40px;
+    }
+
+    .footer__box:last-child {
+        margin-bottom: 30px;
+    }
+
+    .footer__box ul li {
+        margin-bottom: 15px;
+    }
+
+    .footer .col-lg-3:last-child {
+        margin-top: 0;
+    }
+
+    .footer__top {
+        padding-bottom: 10px;
+    }
+}
