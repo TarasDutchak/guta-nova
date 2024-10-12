@@ -33,6 +33,27 @@ header.header {
             }
         }
     }
+
+    .telwrap ul {
+        display: block;
+        padding: 0 0 0 10px;
+        border-left: 1.5px solid #C9A86C;
+
+        li {
+            margin-left: 0;
+            margin-bottom: 3px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 110%;
+        }
+    }
 }
 
 header.header.header-out {
