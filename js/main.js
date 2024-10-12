@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    // animation
+    AOS.init({
+        duration: 1000,
+        disable: 'mobile'
+    });
+    window.addEventListener('load', AOS.refresh)
+
+
     // input mask
     $('.telinput').inputmask({
         "mask": "+ 38 /999/ 999-9999",
@@ -79,41 +87,41 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
+        },
+        breakpoints: {
             576: {
-              slidesPerView: 2.4,
-              spaceBetween: 20,
+                slidesPerView: 2.4,
+                spaceBetween: 20,
             },
             991: {
-              slidesPerView: 3.4,
-              spaceBetween: 40,
+                slidesPerView: 3.4,
+                spaceBetween: 40,
             },
-           
-          },
+
+        },
     });
 
     // faq
-    $('.faqheader').click(function(){
+    $('.faqheader').click(function () {
         $(this).next('.faqbody').slideToggle();
         $(this).toggleClass('active');
     });
-  
-    $('.telicon').click(function(){
+
+    $('.telicon').click(function () {
         $('.telwrap').toggle();
     })
 
-    $('.menubtn').click(function(){
+    $('.menubtn').click(function () {
         $('.mobmenu-col').addClass('show');
         $('body').addClass('hidden');
     })
 
-    $('.close-menu').click(function(){
+    $('.close-menu').click(function () {
         $('.mobmenu-col').removeClass('show');
         $('body').removeClass('hidden');
     })
 
 
-    
+
 
 });
