@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/fancybox.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/lib/aos.css">
@@ -44,9 +44,9 @@
                             <a href="#">EN</a>
                         </div>
                         <div class="header__tel">
-                            <button class="telicon">
+                            <a href="tel:+380663456876" class="telicon">
                                 <img src="img/general/mobtel.svg" alt="tel">
-                            </button>
+                            </a>
                             <div class="telwrap">
                                 <a href="tel:+380663456876" class="telbtn">38 (066) 345-68-76</a>
                             </div>
@@ -181,7 +181,8 @@
                                     можливість отримати
                                     стабільний дохід від здачі котеджів в оренду протягом року.
                                 </p>
-                                <a href="#" class="yellowbtn">Отримати консультацію</a>
+                                <a href="#" class="yellowbtn" data-bs-toggle="modal"
+                                    data-bs-target="#consultation">Отримати консультацію</a>
                             </div>
                         </div>
                     </div>
@@ -1362,10 +1363,74 @@
     </footer>
 
 
+
+
+    <div class="modal fade generalmodal" id="consultation" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button class="closemodal" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="img/general/close-modal.svg" alt="close">
+                </button>
+                <div class="modal-body">
+                    <div class="constop">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <p class="title">
+                                    Отримати
+                                    <span>Консультацію</span>
+                                </p>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="descr">
+                                    <p>
+                                        Будь ласка, заповніть форму, щоб отримати детальну інформацію про наш котеджний
+                                        комплекс.<br>
+                                        Ми зв’яжемося з вами найближчим часом.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="inputfield">
+                                                <input type="text" placeholder="Як до вас звертатись?">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="inputfield">
+                                                <input class="telinput" type="text" placeholder="Номер телефону">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <input class="submbtn yellowbtn" type="button" value="Надіслати">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consbott">
+                        <img src="img/general/modalimg.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/jquery.inputmask.min.js"></script>
     <script src="js/lib/fancybox.js"></script>
     <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
     <script src="js/lib/aos.js"></script>
     <script src="js/main.js"></script>
 </body>

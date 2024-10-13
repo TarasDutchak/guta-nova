@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    overflow-x: hidden;
+}
+
 body * {
     box-sizing: border-box;
     line-height: 150%;
@@ -106,6 +110,7 @@ h3,
 
     &:hover {
         background: #bb9247;
+        color: #fff;
     }
 
     &.borderbtn {

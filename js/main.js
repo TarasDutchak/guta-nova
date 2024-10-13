@@ -108,7 +108,7 @@ $(document).ready(function () {
     });
 
     $('.telicon').click(function () {
-        $('.telwrap').toggle();
+        $('.telwrap.multi').toggle();
     })
 
     $('.menubtn').click(function () {
