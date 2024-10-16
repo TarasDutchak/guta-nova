@@ -1,0 +1,521 @@
+.heropagesect {
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0.5);
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        color: #fff;
+        font-family: "Tenor Sans", sans-serif;
+        font-size: 70px;
+        line-height: 110%;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 45px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+}
+
+.heropagesect__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.invinfo {
+    padding: 160px 0 145px;
+    background: #FAF9F4;
+    background-image: url(../img/main/pattern.png);
+    background-repeat: repeat-x;
+
+    h2 {
+        i {
+            font-style: normal;
+            padding-left: 72px;
+        }
+    }
+
+    .invinfo__top {
+        padding-bottom: 50px;
+        position: relative;
+        border-bottom: 1px solid rgba(#B59964, 0.2);
+
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: url(../img/main/star.svg) no-repeat center / 100%;
+            position: absolute;
+            right: 17%;
+            bottom: -15px;
+        }
+    }
+
+    .invinfo__middle {
+        padding: 50px 0 130px;
+
+        .icbox {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 364px;
+            margin-top: 16px;
+
+            .imgwrap {
+                width: 100%;
+                max-width: 69px;
+                flex: 0 0 69px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: 100%;
+                max-width: calc(100% - 69px);
+                flex: 0 0 calc(100% - 69px);
+                padding-left: 25px;
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+
+    .invinfo__bottom {
+        .col-lg-4 {
+            &:nth-child(3) {
+                .invinfo_col {
+                    padding-left: 80px;
+                }
+            }
+
+            &:nth-child(2) {
+                position: relative;
+
+                .invinfo_col {
+                    height: 100%;
+                    border-left: 1px solid rgba(#B59964, 0.2);
+                    border-right: 1px solid rgba(#B59964, 0.2);
+                }
+
+
+                &::after,
+                &::before {
+                    position: absolute;
+
+                }
+
+                &::after {}
+
+                &::before {}
+            }
+        }
+    }
+
+    .invinfo_col {
+        .title {
+            margin-bottom: 55px;
+            font-size: 28px;
+            line-height: 110%;
+            color: #2A332D;
+            text-transform: uppercase;
+            font-family: "Tenor Sans", sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            max-width: 365px;
+
+            li {
+                position: relative;
+                padding-left: 31px;
+                margin-bottom: 40px;
+                font-size: 15px;
+                color: #231F20;
+
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: url(../img/main/star.svg) no-repeat center / 100%;
+                }
+            }
+        }
+    }
+
+    .circleblock {
+        width: 321px;
+        height: 321px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #C9A86C;
+        padding-top: 97px;
+        text-align: center;
+
+        &:nth-child(2) {
+            margin-top: -40px;
+
+        }
+
+        .circle-title {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-size: 21px;
+            line-height: 110%;
+        }
+
+        .descr {
+            color: #C9A86C;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 110%;
+
+            span {
+                font-size: 98px;
+                font-family: "Tenor Sans", sans-serif;
+                line-height: 110%;
+            }
+
+            i {
+                font-size: 36px;
+                font-style: normal;
+            }
+        }
+    }
+
+    .bottominf {
+        margin-top: 32px;
+        text-align: center;
+
+        p {
+            margin-bottom: 50px;
+            font-size: 15px;
+            color: #231F20;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.exclusivecomplex.exclusivecomplex__invest {
+    background: #FFFFFE;
+    padding: 140px 0 502px;
+
+    .exclusivecomplex__bg {
+        height: 100%;
+
+        img {
+            object-position: top right;
+        }
+    }
+
+    .descr {
+        padding-left: 36px;
+        max-width: 690px;
+    }
+
+
+}
+
+.welcomesect.welcomesect__invest {
+    p {
+        max-width: 750px;
+    }
+
+    .title {
+        font-size: 47px;
+        line-height: 110%;
+        text-transform: uppercase;
+
+        span {
+            color: #C9A86C;
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+    .heropagesect h1 {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+
+    .invinfo {
+        padding: 140px 0 120px;
+    }
+
+    .exclusivecomplex.exclusivecomplex__invest {
+        padding: 120px 0 400px;
+    }
+
+    .invinfo .invinfo__top {
+        padding-bottom: 40px;
+    }
+
+
+
+    .welcomesect.welcomesect__invest .title {
+        font-size: 46px;
+    }
+
+    .heropagesect p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .heropagesect h1 {
+        font-size: 44px;
+    }
+
+    .invinfo {
+        background-size: auto 50px;
+        padding: 100px 0;
+    }
+
+    .invinfo .invinfo__top {
+        padding-bottom: 30px;
+    }
+
+    .invinfo .invinfo__middle {
+        padding: 50px 0 100px;
+
+        .descr {
+            padding-right: 50px;
+        }
+    }
+
+    .invinfo .invinfo_col .title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .invinfo .invinfo__bottom .col-lg-4:nth-child(1) .invinfo_col {
+        padding-right: 40px;
+    }
+
+    .invinfo .invinfo__bottom .col-lg-4:nth-child(3) .invinfo_col {
+        padding-left: 40px;
+    }
+
+    .invinfo .circleblock {
+        width: 260px;
+        height: 260px;
+        padding-top: 80px;
+    }
+
+    .invinfo .circleblock .circle-title {
+        font-size: 17px;
+        max-width: 258px;
+        margin: 0 auto 15px;
+    }
+
+    .invinfo .circleblock .descr span {
+        font-size: 70px;
+    }
+
+    .invinfo .circleblock:nth-child(2) {
+        margin-top: -20px;
+    }
+
+    .invinfo .invinfo_col ul li {
+        margin-bottom: 25px;
+    }
+
+    .invinfo .bottominf p {
+        margin-bottom: 35px;
+    }
+
+    .exclusivecomplex.exclusivecomplex__invest {
+        padding: 100px 0 300px;
+    }
+
+    .welcomesect.welcomesect__invest .title {
+        font-size: 38px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .invinfo .invinfo__bottom .col-lg-4:nth-child(3) .invinfo_col {
+        padding-left: 0;
+    }
+
+    .invinfo .invinfo__bottom .col-lg-4:first-child .invinfo_col {
+        padding-right: 0;
+    }
+
+    .welcomesect.welcomesect__invest .title {
+        font-size: 32px;
+    }
+
+
+}
+
+@media(max-width:991.8px) {
+    .invinfo .circleblock:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .invinfo .invinfo__bottom .col-lg-4:nth-child(2) .invinfo_col {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        border: none;
+    }
+
+    .invinfo .circleblock {
+        margin: 30px 10px !important;
+    }
+}
+
+@media(max-width:767.8px) {
+
+    .heropagesect h1 {
+        font-size: 38px;
+    }
+
+    .heropagesect p br {
+        display: none;
+    }
+
+    .invinfo h2 i {
+        padding-left: 40px;
+    }
+
+    .invinfo {
+        padding: 80px 0;
+    }
+
+    .invinfo .invinfo__bottom .col-lg-4:nth-child(2) .invinfo_col {
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    .invinfo .circleblock {
+        margin: 0 auto 10px !important;
+    }
+
+    .exclusivecomplex.exclusivecomplex__invest {
+        padding: 80px 0 240px;
+    }
+
+    .welcomesect.welcomesect__invest .title {
+        font-size: 26px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .heropagesect h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .invinfo {
+        background-size: auto 40px;
+        padding: 60px 0;
+
+        h2 {
+            span, i {
+                padding-left: 0;
+            }
+
+           span {
+            display: inline;
+           }
+        }
+    }
+
+    .invinfo .invinfo__top {
+        padding-bottom: 20px;
+    }
+
+    .invinfo .invinfo__middle {
+        padding: 30px 0 40px;
+    }
+
+    .invinfo .invinfo__middle .descr {
+        padding-right: 0;
+    }
+
+    .invinfo .invinfo__middle .icbox .imgwrap {
+        max-width: 50px;
+        flex: 0 0 50px;
+    }
+
+    .invinfo .invinfo__middle .icbox p {
+        max-width: calc(100% - 50px);
+        flex: 0 0 calc(100% - 50px);
+        padding-left: 15px;
+    }
+
+    .invinfo .invinfo_col .title {
+        font-size: 19px;
+        margin-bottom: 20px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .invinfo .invinfo__bottom .col-lg-4:nth-child(2) .invinfo_col {
+        margin-bottom: 30px;
+    }
+
+    .exclusivecomplex.exclusivecomplex__invest {
+        padding: 60px 0 240px;
+    }
+
+    .exclusivecomplex.exclusivecomplex__invest .descr {
+        padding-left: 0;
+    }
+
+    .benefits {
+        padding-top: 60px;
+    }
+}
+
