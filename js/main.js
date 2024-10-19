@@ -137,6 +137,13 @@ $(document).ready(function () {
         return false;
     });
 
+    // меню скролл
+    $("header.header ul.headermenu:not(.noscrollmenu) li:not(.noscroll)").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 80;
+        $('body,html').animate({ scrollTop: top }, 800);
+    });
 
 
 });
