@@ -1,0 +1,823 @@
+ .abmap {
+     padding: 160px 0 0 0;
+
+     h2 {
+         margin-bottom: 70px;
+     }
+
+     .fwimg {
+         margin-top: 90px;
+         width: 100%;
+     }
+ }
+
+ .abmap__descr {
+     max-width: 671px;
+
+     p {
+         margin: 0;
+         font-size: 17px;
+         color: #231F20;
+         line-height: 170%;
+     }
+ }
+
+ .abmapicsect {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+ }
+
+ .coagescount {
+     width: 100%;
+     max-width: 250px;
+     flex: 0 0 250px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+
+     span {
+         font-family: "Tenor Sans", sans-serif;
+         font-size: 80px;
+         line-height: 110%;
+         color: #C9A86C;
+         padding-right: 10px;
+         position: relative;
+
+
+         &::after {
+             content: '';
+             display: inline-block;
+             position: absolute;
+             right: 0;
+             top: 50%;
+             transform: translateY(-50%);
+             width: 1px;
+             height: 60px;
+             background: rgba(#C9A86C, 0.3);
+         }
+     }
+
+     p {
+         text-transform: uppercase;
+         font-size: 17px;
+         line-height: 110%;
+         color: #2A332D;
+         padding-left: 10px;
+         margin: 0;
+     }
+ }
+
+ .coagescherga {
+     width: 100%;
+     max-width: 345px;
+     flex: 0 0 345px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+
+
+     .imgwrap {
+         position: relative;
+         width: 100%;
+         max-width: 72px;
+         flex: 0 0 72px;
+         height: 72px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         img {
+             max-width: 100%;
+             vertical-align: top;
+         }
+     }
+
+     p {
+         width: 100%;
+         max-width: calc(100% - 72px);
+         flex: 0 0 calc(100% - 72px);
+         color: #2A332D;
+         font-size: 15px;
+         text-transform: uppercase;
+         line-height: 110%;
+         padding-left: 30px;
+         position: relative;
+         margin: 0;
+
+         span {
+             display: inline-block;
+             padding: 4.5px 17.5px;
+             background: #C9A86C;
+             border-radius: 40px;
+             text-transform: uppercase;
+             color: #fff;
+             font-size: 17px;
+             font-weight: 500;
+             line-height: 110%;
+             margin-bottom: 12px;
+         }
+
+         &::after {
+             content: '';
+             display: inline-block;
+             position: absolute;
+             left: 15px;
+             top: 50%;
+             transform: translateY(-50%);
+             width: 1px;
+             height: 60px;
+             background: rgba(#C9A86C, 0.3);
+         }
+     }
+ }
+
+ //  ----
+ .greenbg {
+     background: #2A332D;
+
+ }
+
+ .d-flex {
+     flex-wrap: wrap;
+ }
+
+ .infosection {
+     padding: 165px 0 273px;
+     position: relative;
+
+     h2 {
+         font-size: 50px;
+         line-height: 110%;
+         margin-bottom: 50px;
+     }
+
+     .leftimg {
+         width: 100%;
+         max-width: 38%;
+         flex: 0 0 38%;
+
+         img {
+             width: 100%;
+         }
+     }
+
+     .tightinfo {
+         width: 100%;
+         max-width: 62%;
+         flex: 0 0 62%;
+         padding-left: 74px;
+         padding-top: 40px;
+
+         p {
+             margin-bottom: 50px;
+             font-size: 17px;
+             color: #fff;
+         }
+
+         ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0 0 0 82px;
+
+             li {
+                 margin-bottom: 30px;
+                 font-size: 17px;
+                 color: #fff;
+                 position: relative;
+                 padding-left: 31px;
+
+                 &:last-child {
+                     margin-bottom: 0;
+                 }
+
+                 &::after {
+                     content: "";
+                     display: inline-block;
+                     width: 22px;
+                     height: 22px;
+                     position: absolute;
+                     left: 0;
+                     top: 0;
+                     background: url(../img/main/star.svg) no-repeat center / 100%;
+                 }
+             }
+
+         }
+     }
+
+     .abspic {
+         bottom: 83px;
+         right: 0;
+         position: absolute;
+         max-width: 510px;
+         width: 100%;
+     }
+
+     .el1 {
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+
+     .el2 {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+     }
+ }
+
+ //  ----
+ .parameters {
+     padding: 160px 0 130px;
+     background: #FAF9F4;
+
+     .secttitle {
+         margin-bottom: 70px;
+     }
+
+     .paramlist {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         height: 100%;
+
+         li {
+             height: 25%;
+             border-bottom: 1px solid #B59964;
+             display: flex;
+             align-items: center;
+             flex-wrap: wrap;
+             padding-right: 19px;
+         }
+
+         .lititle {
+             color: #595E49;
+             font-size: 15px;
+             margin-bottom: 10px;
+         }
+
+         .bigtext {
+             font-size: 40px;
+             margin: 0;
+             font-weight: 500;
+             line-height: 110%;
+             color: #2A332D;
+
+             span {
+                 font-size: 19px;
+             }
+         }
+
+         .descr {
+             font-size: 21px;
+             font-weight: 500;
+             line-height: 110%;
+             color: #2A332D;
+             text-transform: uppercase;
+         }
+
+     }
+
+     .tabcontent .row .col-xl-3:last-child {
+         .paramlist {
+             li {
+                 padding-left: 40px;
+             }
+         }
+     }
+ }
+
+ .infrtabsheader.centered {
+     justify-content: center;
+
+     button {
+         margin: 0 35px;
+         padding-bottom: 3px;
+         border-bottom: 2px solid transparent;
+
+         &.active {
+             border-bottom: 2px solid #C9A86C;
+         }
+     }
+ }
+
+ .roomsect {
+     background: #fff;
+
+     .col-lg-6 {
+         &:nth-child(1) {
+             border-right: 1px solid rgba(#B59964, 0.2);
+         }
+     }
+
+     .roombox {
+         padding: 69px 40px 30px 40px;
+
+
+         .imgwrap {
+             height: 385px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+
+             img {
+                 max-width: 100%;
+                 max-height: 100%;
+             }
+         }
+
+         p {
+             text-align: center;
+             color: #595E49;
+             font-size: 18px;
+             margin: 55px 0 0 0;
+         }
+     }
+ }
+
+ .parameters-botbtn {
+     margin-top: 55px;
+
+     a {
+         max-width: 350px;
+         width: 100%;
+
+         img {
+             margin-right: 15px;
+         }
+     }
+ }
+
+ //  ----
+ .designsect {
+     padding: 160px 0 126px;
+     background-image: url(../img/main/pattern.png);
+     background-repeat: repeat-x;
+     background-size: auto;
+
+     .secttitle {
+         margin-bottom: 100px;
+     }
+
+     .slarrbox .swiper-button-next,
+     .slarrbox .swiper-button-prev {
+         top: -200px;
+     }
+ }
+
+ // ----
+ .ourmanagement {
+     padding: 85px 0 90px;
+     border-top: 1px solid rgba(#B59964, 0.2);
+
+     .secttitle {
+         margin-bottom: 42px;
+     }
+
+     .descr {
+         max-width: 406px;
+         color: #fff;
+         font-size: 17px;
+         margin: 0;
+     }
+ }
+
+ .ourmanagement__circles {
+     display: inline-flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     max-width: 486px;
+     width: 100%;
+
+     a {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         border: 1px solid #C9A86C;
+         width: 200px;
+         height: 200px;
+         text-align: center;
+
+         p {
+             padding-top: 15px;
+             text-transform: uppercase;
+             font-size: 16px;
+             line-height: 110%;
+             color: #fff;
+             margin: 0;
+
+             span {
+                 display: block;
+                 margin-top: 14px;
+                 font-family: "Tenor Sans", sans-serif;
+                 font-size: 57px;
+                 line-height: 110%;
+                 color: #C9A86C;
+             }
+         }
+
+         .onlytext {
+             color: #C9A86C;
+
+             img {
+                 display: block;
+                 width: 38px;
+                 margin: 14px auto 0;
+             }
+         }
+     }
+ }
+
+ @media(max-width:1599.8px) {
+
+     .coagescount span {
+         font-size: 70px;
+     }
+
+     .infosection {
+         padding: 120px 0 270px;
+     }
+
+     .infosection .abspic {
+         max-width: 390px;
+     }
+
+     .infosection .tightinfo ul li {
+         margin-bottom: 20px;
+     }
+
+     .parameters .paramlist .descr {
+         font-size: 20px;
+     }
+
+     .designsect .secttitle {
+         margin-bottom: 60px;
+     }
+
+     .designsect .slarrbox .swiper-button-next,
+     .designsect .slarrbox .swiper-button-prev {
+         top: -140px;
+     }
+
+     .designsect {
+         padding-bottom: 120px;
+     }
+
+
+
+
+
+     .parameters {
+         padding: 120px 0;
+     }
+
+     .abmap {
+         padding: 120px 0 0 0;
+     }
+
+     .infosection h2,
+     .infosection .tightinfo p,
+     .parameters .secttitle {
+         margin-bottom: 40px;
+     }
+
+     .abmap__descr p,
+     .infosection .tightinfo p,
+     .infosection .tightinfo ul li {
+         font-size: 16px;
+     }
+ }
+
+ @media(max-width:1399.8px) {
+     .abmap {
+         padding: 100px 0 0 0;
+     }
+
+     .abmap h2 {
+         margin-bottom: 30px;
+     }
+
+     .abmap__descr p {
+         line-height: 150%;
+     }
+
+     .coagescount span {
+         font-size: 60px;
+     }
+
+     .coagescherga .imgwrap {
+         max-width: 60px;
+         flex: 0 0 60px;
+         height: 60px;
+     }
+
+     .coagescherga p {
+         max-width: calc(100% - 60px);
+         flex: 0 0 calc(100% - 60px);
+     }
+
+     .coagescherga p span {
+         font-size: 15px;
+         padding: 3px 10px 2px;
+     }
+
+     .coagescount {
+         max-width: 200px;
+         flex: 0 0 200px;
+     }
+
+     .coagescherga {
+         max-width: 300px;
+         flex: 0 0 300px;
+     }
+
+     .abmap .fwimg {
+         margin-top: 40px;
+     }
+
+     .infosection h2 {
+         font-size: 36px;
+         margin-bottom: 30px;
+     }
+
+     .infosection .tightinfo ul {
+         padding-left: 40px;
+     }
+
+     .infosection .abspic {
+         max-width: 310px;
+         bottom: 50px;
+     }
+
+
+     .infosection {
+         padding: 100px 0 240px;
+     }
+
+     .parameters {
+         padding: 100px 0;
+     }
+
+     .roomsect .roombox {
+         padding: 50px 30px 30px 30px;
+     }
+
+     .roomsect .roombox .imgwrap {
+         height: 330px;
+     }
+
+     .roomsect .roombox p {
+         margin-top: 40px;
+     }
+
+     .parameters .tabcontent .row .col-xl-3:last-child .paramlist li {
+         padding-right: 0;
+         padding-left: 20px;
+     }
+
+     .parameters .paramlist .descr {
+         line-height: 140%;
+         margin: 0;
+     }
+
+     .designsect {
+         background-size: auto 50px;
+         padding: 100px 0;
+     }
+
+     .designsect .secttitle,
+     .ourmanagement .secttitle {
+         margin-bottom: 30px;
+     }
+
+     .designsect .slarrbox .swiper-button-next,
+     .designsect .slarrbox .swiper-button-prev {
+         top: -100px;
+     }
+
+     .ourmanagement .descr {
+         font-size: 16px;
+     }
+
+ }
+
+ @media(max-width:1199.8px) {
+     .abmap__descr {
+         margin-bottom: 40px;
+     }
+
+     .abmapicsect {
+         justify-content: flex-start;
+     }
+
+     .infosection .tightinfo {
+         padding-left: 50px;
+     }
+
+     .infosection .abspic {
+         display: none;
+     }
+
+     .infosection .el2 {
+         display: none;
+     }
+
+     .infosection {
+         padding-bottom: 100px;
+     }
+
+     .parameters .paramlist .descr {
+         font-size: 18px;
+     }
+
+     .parameters .paramlist .bigtext {
+         font-size: 36px;
+     }
+
+     .ourmanagement {
+         .text-end {
+             text-align: right !important;
+         }
+     }
+
+     .ourmanagement__circles a {
+         width: 180px;
+         height: 180px;
+     }
+
+     .ourmanagement__circles a p span {
+         margin-top: 0;
+     }
+
+ }
+
+ @media(max-width:991.8px) {
+     .infosection .leftimg {
+         display: none;
+     }
+
+     .infosection .tightinfo {
+         max-width: 100%;
+         flex: 0 0 100%;
+         padding-left: 36px;
+         padding-top: 0;
+     }
+
+     .parameters {
+         .tabcontent>.row {
+             &>.col-xl-6 {
+                 order: 1;
+             }
+
+             &>.col-xl-3 {
+                 order: 2;
+             }
+         }
+     }
+
+     .roomsect {
+         margin-bottom: 30px;
+     }
+
+     .parameters .paramlist li {
+         height: auto;
+         padding: 10px 0;
+     }
+
+     .parameters .tabcontent .row .col-xl-3:last-child .paramlist li {
+         padding-left: 0;
+     }
+
+     .ourmanagement__circles {
+         margin-top: 30px;
+     }
+
+     .ourmanagement__circles {
+         max-width: 400px;
+     }
+
+ }
+
+ @media(max-width:767.8px) {
+     .infosection h2 {
+         font-size: 26px;
+     }
+ }
+
+ @media(max-width:575.8px) {
+     .abmap {
+         padding-top: 60px;
+
+         h2 {
+             font-size: 20px;
+         }
+     }
+
+     .coagescount {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+     }
+
+     .coagescherga {
+        max-width: 100%;
+        flex: 0 0 100%;
+     }
+
+     .infosection .tightinfo {
+        padding-left: 12px;
+     }
+
+     .infosection {
+        padding-top: 60px;
+        padding-bottom: 60px;
+     }
+
+     .infosection .tightinfo ul {
+        padding-left: 0;
+     }
+
+     .infosection .tightinfo p {
+        margin-bottom: 20px;
+     }
+
+     .parameters {
+        padding: 60px 0;
+     }
+     
+     .infrtabsheader.centered button {
+        margin: 0 20px;
+     }
+
+     .roomsect .col-lg-6:first-child {
+        border-bottom: 1px solid #B59964;
+     }
+
+
+     .infosection h2 {
+        font-size: 22px;
+     }
+
+     .abmap h2,
+     .infosection h2,
+     .parameters .secttitle {
+         margin-bottom: 20px;
+     }
+
+     .parameters .paramlist li {
+        display: block;
+     }
+
+     .parameters .paramlist .lititle {
+        margin-bottom: 5px;
+     }
+
+     .parameters .paramlist .descr {
+        font-size: 17px;
+     }
+
+     .designsect .slarrbox .swiper-button-next, .designsect .slarrbox .swiper-button-prev {
+        top: -80px;
+        bottom: initial;
+        vertical-align: top;
+        display: inline-block;
+        right: inherit;
+     }
+
+     .designsect .slarrbox .swiper-button-next {
+        left: 80px;
+     }
+
+     .designsect .slarrbox .swiper-button-prev {
+        left: 0 !important;
+     }
+
+     .designsect .secttitle {
+        margin-bottom: 100px;
+     }
+
+     .designsect {
+        padding: 60px 0;
+        background-size: auto 40px, cover;
+     }
+
+     .ourmanagement {
+        padding: 60px 0;
+     }
+   
+     .ourmanagement__circles a {
+        width: 150px;
+        height: 150px;
+    }
+
+    .ourmanagement__circles a p {
+        font-size: 14px;
+        
+        span {
+            font-size: 40px;
+        }
+    }
+
+ }

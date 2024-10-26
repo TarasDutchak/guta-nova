@@ -123,17 +123,17 @@ $(document).ready(function () {
 
 
     // скрол до елемента
-    $('.scrolldown').on('click', function() {
+    $('.scrolldown').on('click', function () {
 
         let href = $(this).attr('href');
-    
+
         $('html, body').animate({
             scrollTop: $(href).offset().top
         }, {
             duration: 370,   // по умолчанию «400» 
             easing: "linear" // по умолчанию «swing» 
         });
-    
+
         return false;
     });
 
@@ -145,5 +145,41 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 800);
     });
 
+    //   Space containers
+    var windowWidth = $(document).width(),
+        containerWidth = $('.container').width(),
+        paddingContainer = ((windowWidth - containerWidth) / 2)
+    $('.tightinfo').css('padding-right', paddingContainer);
+    $('.infrastrsect-wrapper').css('padding-left', paddingContainer);
+    
 
+
+    $(window).resize(function () {
+        var windowWidth = $(document).width(),
+            containerWidth = $('.container').width(),
+            paddingContainer = ((windowWidth - containerWidth) / 2)
+        $('.tightinfo').css('padding-right', paddingContainer);
+        $('.infrastrsect-wrapper').css('padding-left', paddingContainer);
+    });
+
+    // Слайдер - про котеджі
+    var swiper = new Swiper(".abcotslider", {
+        slidesPerView: 1.4,
+        spaceBetween: 10,
+        speed: 1000,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 27,
+            },
+           
+
+        },
+    });
 });
