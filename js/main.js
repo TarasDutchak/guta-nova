@@ -182,4 +182,9 @@ $(document).ready(function () {
 
         },
     });
+
+    // попав головна - авто показ
+    $(window).on('load', function() {
+        $('#propos').modal('show');
+    });
 });

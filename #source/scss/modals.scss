@@ -93,6 +93,66 @@
 
 }
 
+.propdescr {
+    padding: 100px 43px 30px;
+    text-align: center;
+    
+    .title {
+        font-size: 35px;
+        margin-bottom: 35px;
+        line-height: 130%;
+    }
+
+    .subtitle {
+        text-transform: uppercase;
+        color: #C9A86C;
+        margin-bottom: 15px;
+        font-size: 19px;
+        line-height: 110%;
+        font-family: "Tenor Sans", sans-serif;
+    }
+
+    .date {
+        display: inline-block;
+        padding: 10px 10px 8px 10px;
+        background: #595E49;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: "Tenor Sans", sans-serif;
+        line-height: 110%;
+        color: #fff;
+        margin-bottom: 45px;
+    }
+
+    .descr {
+        max-width: 385px;
+        margin: 0 auto 40px;
+        font-size: 15px;
+        color: #231F20;
+    }
+
+    .yellowbtn {
+        max-width: 320px;
+        height: 55px;
+    }
+
+   
+
+}
+
+#propos .imgwrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
 @media(max-width:1599.8px) {
     .generalmodal .title {
         font-size: 32px;
@@ -118,6 +178,24 @@
         margin-bottom: 30px;
     }
 
+    .propdescr {
+        padding: 70px 30px 20px;
+    }
+
+    .generalmodal .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .propdescr .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .propdescr .date {
+        margin-bottom: 40px;
+    }
+
+
 }
 
 @media(max-width:991.8px) {
@@ -132,6 +210,24 @@
     .generalmodal .descr p {
         font-size: 16px;
     }
+
+    .generalmodal .title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .propdescr .subtitle {
+        margin-bottom: 15px;
+    }
+
+    .propdescr .date {
+        margin-bottom: 25px;
+    }
+
+    .propdescr .descr {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media(max-width:767.8px) {
@@ -141,6 +237,10 @@
 
     .generalmodal .constop {
         padding: 60px 30px 30px 30px;
+    }
+
+    #propos .imgwrap {
+        display: none;
     }
 }
 
@@ -176,5 +276,15 @@
     .consbott {
         display: none;
     }
+
+    .propdescr {
+        padding: 70px 20px 20px;
+    }
+
+    .generalmodal .title {
+        padding-right: 0;
+    }
+
+
 
 }
